@@ -29,7 +29,7 @@ func NewCmdColorizeApplied(ctx context.Context, streams genericclioptions.IOStre
 
 	cmd := &cobra.Command{
 		Use:          "colorize-applied [flags]",
-		Short:        "colorize applied result",
+		Short:        "colorize the applied result",
 		SilenceUsage: true,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if err := o.Complete(cmd, args); err != nil {
@@ -76,7 +76,7 @@ func (o *ColorizeAppliedOptions) ColorPrint(line string) (int, error) {
 		"unchanged":  {color.FgHiBlack},
 	}
 	for k, v := range m {
-		if strings.Contains(line, k) {
+		if strings.Contains(line, " "+k) {
 			return color.New(v...).Fprintf(o.Out, "%s\n", line)
 		}
 	}

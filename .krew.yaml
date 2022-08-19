@@ -13,29 +13,29 @@ spec:
       matchLabels:
         os: darwin
         arch: amd64
-    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied_darwin_amd64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied-darwin-amd64.tar.gz" .TagName }}
     bin: kubectl-colorize-applied
   - selector:
       matchLabels:
         os: darwin
         arch: arm64
-    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied_darwin_arm64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied-darwin-arm64.tar.gz" .TagName }}
     bin: kubectl-colorize-applied
   - selector:
       matchLabels:
         os: linux
         arch: amd64
-    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied_linux_amd64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied-linux-amd64.tar.gz" .TagName }}
     bin: kubectl-colorize-applied
   - selector:
       matchLabels:
         os: linux
         arch: arm64
-    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied_linux_arm64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied-linux-arm64.tar.gz" .TagName }}
     bin: kubectl-colorize-applied
   - selector:
       matchLabels:
         os: windows
         arch: amd64
-    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied_windows_amd64.tar.gz" .TagName }}
+    {{addURIAndSha "https://github.com/cappyzawa/kubectl-colorize-applied/releases/download/{{ .TagName }}/kubectl-colorize-applied-windows-amd64.tar.gz" .TagName }}
     bin: kubectl-colorize-applied.exe

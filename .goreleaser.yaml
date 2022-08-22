@@ -9,6 +9,7 @@ builds:
       - windows
       - darwin
     main: ./cmd/kubectl-colorize-applied
+    binary: kubectl-colorize_applied
     goarch:
       - amd64
       - arm64

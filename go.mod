@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/fatih/color v1.14.1
-	github.com/google/go-cmp v0.5.8
+	github.com/google/go-cmp v0.5.9
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/pflag v1.0.5
 	k8s.io/cli-runtime v0.24.4

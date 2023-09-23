@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cappyzawa/kubectl-colorize-applied/pkg/cmd"
+	"github.com/cappyzawa/kubectl-colorize-applied/internal/cmd"
 	"github.com/fatih/color"
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/cli-runtime/pkg/genericclioptions"

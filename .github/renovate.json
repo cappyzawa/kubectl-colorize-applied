@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "rebaseWhen": "behind-base-branch",
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "postUpdateOptions": ["gomodTidy"],
+  "prConcurrentLimit": 5
+}
